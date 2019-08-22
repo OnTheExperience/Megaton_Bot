@@ -12,10 +12,10 @@ public class DBManager {
         try {
             System.out.println("Подключаюсь к БД...");
             Connection con = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/megatonna_bot" +
+                    "jdbc:mysql://eu-cdbr-west-02.cleardb.net:3306/heroku_2a56646938187a0" +
                         "?&useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC",
-                    "root",
-                    "000000");
+                    "b01cf8122fadb9",
+                    "43bac7e4");
 
             Statement stmt = con.createStatement();
 
