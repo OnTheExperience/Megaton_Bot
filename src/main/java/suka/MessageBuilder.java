@@ -30,7 +30,7 @@ public class MessageBuilder {
         String suka ="👤 🎭*" + user.getNickname() + "* (@" + user.getTelegram_nickname() + "" +
                 ")\n┌🏷*" + user.getId() + "*\n├" +
                 "🤘*Банда*: " + user.getBand() + "\n├🔘" +
-                "*Без титула*" + "\n├🏙*Гражданин*\n└🏕*Долбоёб*\n*Боевая мощь*:\n┌*" +
+                "*Без титула*" + "\n├" + (user.isAdmin() ? "\uD83C\uDFA9*Мэр*" : "🏙*Гражданин*" ) + "\n└🏕*Долбоёб*\n*Боевая мощь*:\n┌*" +
                 getBMTitle(user).bmTitle + "*(📯" + getBMTitle(user).bm + ")\n├⚔️ *" +
                 user.getDamage() + "* | 🛡 *" +
                 user.getDefence() + "*\n├💪 *" +
@@ -52,7 +52,8 @@ public class MessageBuilder {
         int bm = Integer.parseInt(user.getAgility()) +
                  Integer.parseInt(user.getAccuracy()) +
                  Integer.parseInt(user.getCharisma()) +
-                 Integer.parseInt(user.getMax_health());
+                 Integer.parseInt(user.getMax_health()) +
+                 Integer.parseInt(user.getDamage());
 
         if (bm < 50)
             bmTitle = "\uD83E\uDDEAВоин из пробирки";
