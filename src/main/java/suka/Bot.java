@@ -93,7 +93,7 @@ public class Bot extends TelegramLongPollingBot {
                     sendMsg(chat_id, "Ты мне чем в лицо тычешь? Ксиву давай!", ButtonsManager.getButtons(1));
                 }
             } else {
-                sendMsg(chat_id, "Сторонним вход запрещен!", null);
+                sendMsg(chat_id, "Добро пожаловать в самую не токсичную фракцию в игре.\nДокажи что ты достойный и скинь мне полный свой профиль /me", null);
             }
         } else {
             if (UserValidations.checkStatsMessage(message, forwardFrom, this, chat_id, update)) {
@@ -203,7 +203,7 @@ public class Bot extends TelegramLongPollingBot {
      * @return имя бота
      */
     public String getBotUsername() {
-        return "megatonww_bot";
+        return "megatontestbot";
     }
 
     /**
@@ -212,6 +212,6 @@ public class Bot extends TelegramLongPollingBot {
      */
     @Override
     public String getBotToken() {
-        return "643589988:AAHko1xWJ21HxFEeKjdwIuYI8fsdDg9lKSk";
+        return "929255777:AAEZtYl6Se4R7JUYYIgR8F8VNjQe7HY4Dws";
     }
 }
