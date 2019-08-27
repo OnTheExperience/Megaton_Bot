@@ -93,7 +93,7 @@ public class Bot extends TelegramLongPollingBot {
                     sendMsg(chat_id, "Ты мне чем в лицо тычешь? Ксиву давай!", ButtonsManager.getButtons(1));
                 }
             } else {
-                sendMsg(chat_id, "Сторонним вход запрещен!", null);
+                sendMsg(chat_id, "Добро пожаловать в самую не токсичную фракцию в игре.\nДокажи что ты достойный и скинь мне полный свой профиль /me", null);
             }
         } else {
             if (UserValidations.checkStatsMessage(message, forwardFrom, this, chat_id, update)) {
