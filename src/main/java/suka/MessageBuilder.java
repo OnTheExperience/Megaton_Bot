@@ -40,7 +40,8 @@ public class MessageBuilder {
                 user.getCharisma() + "* 🤸🏽‍♂️ *" +
                 user.getAgility() +  "*🔋 *" +
                 user.getStamina() + "*\n├🏵 *" +
-                user.getDzen() + "*\n└💈 *" +
+                (!user.getDzen().equals("0") ? String.valueOf(Integer.valueOf(user.getDzen()) - 1) : "0") +
+                "*\n└💈 *" +
                 user.getDonation_currency() + admin +
                 last_time;
         return suka;
