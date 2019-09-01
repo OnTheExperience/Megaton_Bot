@@ -1,6 +1,10 @@
 package Entity;
 
-public class User {
+import suka.MessageBuilder;
+
+import java.util.Objects;
+
+public class User implements Comparable<User> {
     private String id;
     private String nickname;
     private String telegram_nickname;
@@ -19,6 +23,7 @@ public class User {
     private String donation_currency;
     private String last_update;
     public String error;
+    private String rate_page;
 
     public String getTelegram_nickname() { return telegram_nickname; }
 
@@ -84,6 +89,8 @@ public class User {
         return last_update;
     }
 
+    public String getRate_page() { return rate_page; }
+
     public User(String id,
                 String nickname,
                 String telegram_nickname,
@@ -141,5 +148,18 @@ public class User {
                 ", donation_currency='" + donation_currency + '\'' +
                 ", last_update='" + last_update + '\'' +
                 '}';
+    }
+
+    public int compareTo(User user) {
+
+        MessageBuilder.BM thisBM = MessageBuilder.getBMTitle(this);
+        MessageBuilder.BM anotherBM = MessageBuilder.getBMTitle(user);
+
+        return anotherBM.bm - thisBM.bm;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(max_health, damage, accuracy, charisma, agility);
     }
 }

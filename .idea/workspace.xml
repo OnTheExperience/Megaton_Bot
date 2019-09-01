@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="telegrambot:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="683c1cdc-7dac-4634-ae94-2d702d2302e9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -57,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/suka/ButtonsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+            <state relative-caret-position="289">
+              <caret line="41" column="58" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,8 +74,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/suka/CommandsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            <state relative-caret-position="216">
+              <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +86,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/suka/UserValidations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
+            <state relative-caret-position="479">
               <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/suka/StatsParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,19 +117,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Database/DBManager.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Entity/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://4752558b-92b5-4eb6-af9d-8b88f721156b/schema/megatonna_bot/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="198">
+              <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,14 +131,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/suka/Bot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="101" column="89" selection-start-line="101" selection-start-column="89" selection-end-line="101" selection-end-column="89" />
+            <state relative-caret-position="456">
+              <caret line="103" column="88" selection-start-line="103" selection-start-column="88" selection-end-line="103" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6803#6804#0" expanded="true" />
-                <element signature="e#6841#6842#0" expanded="true" />
-                <element signature="e#7001#7002#0" expanded="true" />
-                <element signature="e#7071#7072#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,8 +143,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/suka/MessageBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+            <state relative-caret-position="311">
+              <caret line="89" column="52" lean-forward="true" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/suka/ArraysUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,15 +214,16 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/java/suka/ChatValidations.java" />
         <option value="$PROJECT_DIR$/src/main/java/Bot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/suka/ButtonsManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/suka/Bot.java" />
         <option value="$PROJECT_DIR$/src/main/java/suka/UserValidations.java" />
         <option value="$PROJECT_DIR$/src/main/java/suka/StatsParser.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/Database/DBManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/suka/ButtonsManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/suka/Bot.java" />
         <option value="$PROJECT_DIR$/src/main/java/suka/CommandsManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/suka/ArraysUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/suka/MessageBuilder.java" />
       </list>
     </option>
@@ -224,17 +247,15 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,27 +303,37 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="telegrambot2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="telegrambot2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="suka" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566489386988" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567358863001" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../telegrambot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -355,12 +386,14 @@
       <workItem from="1565696021344" duration="15907000" />
       <workItem from="1566326404856" duration="1561000" />
       <workItem from="1566412527772" duration="18058000" />
-      <workItem from="1566755992395" duration="890000" />
+      <workItem from="1566755992395" duration="2619000" />
+      <workItem from="1566886441063" duration="14590000" />
+      <workItem from="1567350142604" duration="8317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145802000" />
+    <option name="totallyTimeSpent" value="170438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,7 +408,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20268457" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2080537" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -384,7 +417,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.28328612" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.23796034" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.23371105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,14 +437,26 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.3295302" />
-      <window_info anchor="right" id="Database" order="6" weight="0.43087247" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.3295302" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="9" weight="0.43087247" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/suka/ArraysUtil.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/telegram/telegrambots/3.5/telegrambots-3.5.jar!/org/telegram/telegrambots/bots/DefaultAbsSender.class">
@@ -473,41 +518,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding>
-            <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/suka/StatsParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/suka/UserValidations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile" />
     <entry file="das://4752558b-92b5-4eb6-af9d-8b88f721156b/schema/megatonna_bot/table/users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Database/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1751">
+          <caret line="106" column="41" selection-start-line="106" selection-start-column="41" selection-end-line="106" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -518,17 +547,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" selection-start-column="51" selection-end-column="51" />
+        <state relative-caret-position="198">
+          <caret line="109" column="34" selection-start-line="109" selection-start-column="34" selection-end-line="109" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Database/DBManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/suka/StatsParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/suka/CommandsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="65" column="59" selection-start-line="65" selection-start-column="59" selection-end-line="65" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/suka/UserValidations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -539,41 +594,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/suka/Bot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="101" column="89" selection-start-line="101" selection-start-column="89" selection-end-line="101" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6803#6804#0" expanded="true" />
-            <element signature="e#6841#6842#0" expanded="true" />
-            <element signature="e#7001#7002#0" expanded="true" />
-            <element signature="e#7071#7072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/suka/ButtonsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+        <state relative-caret-position="289">
+          <caret line="41" column="58" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/suka/CommandsManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/suka/Bot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+        <state relative-caret-position="456">
+          <caret line="103" column="88" selection-start-line="103" selection-start-column="88" selection-end-line="103" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/suka/ArraysUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/suka/MessageBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+        <state relative-caret-position="311">
+          <caret line="89" column="52" lean-forward="true" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -586,10 +640,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>telegrambot:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
