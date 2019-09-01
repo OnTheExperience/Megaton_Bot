@@ -101,15 +101,13 @@ public class Bot extends TelegramLongPollingBot {
                     DBManager.upsertUser(user);
                     sendMsg(chat_id, "Ваш профиль учтён!", ButtonsManager.getButtons(1));
             }
-            CommandsManager.processCommand(message, this, String.valueOf(user_id), chat_id);
+            CommandsManager.processCommand(message, this, String.valueOf(user_id), user, chat_id);
             //String suka = MessageBuilder.showUserStats(String.valueOf(user_id));
             //sendMsg(chat_id, suka, shit_buttons);
         }
 
         //User user = StatsParser.parseStats(message);
         //DBManager.addUser(user);
-
-
 
 /*
 */

@@ -5,6 +5,9 @@ import Entity.User;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Date;
 
 public class MessageBuilder {
@@ -45,6 +48,49 @@ public class MessageBuilder {
                 user.getDonation_currency() + admin +
                 last_time;
         return suka;
+    }
+
+    public static String showRating(User user, int page, Bot bot, String chat_id){
+        ArrayList<User> users = DBManager.getAllUsers();
+        page -= 1;
+
+        Collections.sort(users);
+        ArrayList<ArrayList<User>> userPages = ArraysUtil.splitArray(users);
+
+        String rating = "\uD83C\uDFC6 Рейтинг жителей Мегатонны:\n`..........`\n";
+
+            for ( int j = 0; j < userPages.get(page).size(); j++ ) {
+                User currentUser = userPages.get(page).get(j);
+                BM bm = getBMTitle(currentUser);
+
+                if ((j + page * 10) + 1 < 10) {
+                    rating += "*0" + ((j + page * 10) + 1);
+                } else {
+                    rating += "*" + ((j + page * 10) + 1);
+                }
+
+                rating += ". *" + bm.bmIcon + " |" + bm.bm + "| - *" + currentUser.getNickname()
+                        + (currentUser.getId().equals(user.getId()) ? "*  `<< ТЫ`\n" : "*\n");
+            }
+
+            rating += "`..........`\n";
+
+            if (!ArraysUtil.areUserOnPage(user, userPages, page)) {
+                BM bm = getBMTitle(user);
+                rating += "`..........`\n";
+                int user_rating = ArraysUtil.findUserRating(user, userPages);
+
+                if ( user_rating < 10 )
+                    rating += "*0" + user_rating;
+                else
+                    rating += "*" + user_rating;
+                rating += ". *" + bm.bmIcon + " |" + bm.bm + "| - *" + user.getNickname() + "*\n";
+            }
+
+            rating += "\n`стр. " + (page + 1) + "`";
+
+        bot.sendMsg(chat_id, rating, ButtonsManager.getButtons(page + 1, page+1 > 1, (userPages.size() - 1) > page));
+        return rating;
     }
 
     public static BM getBMTitle(User user) {
@@ -106,13 +152,16 @@ public class MessageBuilder {
         return new BM(bmTitle, bm);
     }
 
-    private static class BM {
+    public static class BM {
         public String bmTitle;
+        public String bmIcon;
         public int bm;
 
         public BM(String bmTitle, int bm) {
             this.bmTitle = bmTitle;
             this.bm = bm;
+            bmIcon = bmTitle.substring(0, 2);
+            System.out.println(bmIcon);
         }
     }
 }

@@ -1,8 +1,13 @@
 package suka;
 
+import Entity.User;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class CommandsManager {
 
-    public static void processCommand(String command, Bot bot, String user_id, String chat_id) {
+    public static void processCommand(String command, Bot bot, String user_id, User user, String chat_id) {
 
         switch (command) {
             case "\uD83D\uDCC2Профиль":
@@ -15,6 +20,9 @@ public class CommandsManager {
             case "\uD83E\uDDFFАколиты Бафомета":
                 bot.sendMsg(chat_id, "Обучающий чат для новчиков  \"\uD83E\uDDFFАколиты Бафомета\"\n" +
                         "https://t.me/joinchat/GSchPlLdPoK3XXCpH20ZHQ", ButtonsManager.getButtons(1));
+                break;
+            case "\uD83C\uDFC6Рейтинги":
+                MessageBuilder.showRating(user, 1, bot, chat_id);
                 break;
             case "\uD83D\uDD25Пылающий Котел":
                 bot.sendMsg(chat_id, "Чат флудильня для токсиков и олдов  \"\uD83D\uDD25Пылающий Котел\"\n" +
@@ -47,8 +55,23 @@ public class CommandsManager {
                 bot.sendMsg(chat_id, "Главное меню:", ButtonsManager.getButtons(1));
                 break;
             default:
-                bot.sendMsg(chat_id, "Что ты хочешь?", ButtonsManager.getButtons(1));
+                processComplicatedCommand(command, bot, user_id, user, chat_id);
 
+        }
+
+    }
+
+    public static void processComplicatedCommand(String command, Bot bot, String user_id, User user, String chat_id) {
+
+        if ( command.contains("➡️") || command.contains("⬅️") ) {
+            Matcher matcher = Pattern.compile("(\\d+)").matcher(command);
+            matcher.find();
+            int page_number = Integer.parseInt(matcher.group(0));
+            System.out.println("PAGE NUMBER IS " + page_number);
+            MessageBuilder.showRating(user, page_number, bot, chat_id);
+
+        } else {
+            bot.sendMsg(chat_id, "Что ты хочешь?", ButtonsManager.getButtons(1));
         }
 
     }

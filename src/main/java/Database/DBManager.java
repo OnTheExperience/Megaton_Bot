@@ -81,19 +81,58 @@ public class DBManager {
         ArrayList<String> fields = new ArrayList<>();
         try {
             System.out.println("Достаю юзера из БД..");
-            if (resultSet.next()) {
+            while (resultSet.next()) {
                 for (int i = 1; i < 18; i++) {
                     System.out.println("Поле " + i + ": " + String.valueOf(resultSet.getString(i)));
                     fields.add(resultSet.getString(i));
                 }
-            } else {
-                System.out.println("Юзер не найден");
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return fields;
+    }
+
+    public static ArrayList<User> getAllUsers(){
+        String query = "select * from users";
+        System.out.println("Команда на выполнение: " + query);
+        ArrayList<String> fields = runQuery(query, "select");
+
+
+        if (!fields.isEmpty()) {
+            int i = 0;
+            ArrayList<User> users = new ArrayList<>();
+            while(true) {
+                if (fields.size() <= i) {
+                    return users;
+                }
+                User user = new User(
+                        fields.get(i),
+                        fields.get(i + 1),
+                        fields.get(i + 2),
+                        fields.get(i + 3).equals("1") ? true : false,
+                        fields.get(i + 4),
+                        fields.get(i + 5),
+                        fields.get(i + 6),
+                        fields.get(i + 7),
+                        fields.get(i + 8),
+                        fields.get(i + 9),
+                        fields.get(i + 10),
+                        fields.get(i + 11),
+                        fields.get(i + 12),
+                        fields.get(i + 13),
+                        fields.get(i + 14),
+                        fields.get(i + 15),
+                        fields.get(i + 16));
+                users.add(user);
+                i += 17;
+            }
+        } else {
+            System.out.println("Юзер не найден");
+        }
+
+        return null;
     }
 
     public static User getUser(String user_id) {

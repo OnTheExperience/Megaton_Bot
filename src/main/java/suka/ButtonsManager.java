@@ -24,8 +24,28 @@ public class ButtonsManager {
                                 "\uD83E\uDDFFАколиты Бафомета",
                                 "\uD83D\uDCA3Фракционный канал",
                                 "✖️Назад"));
-        }
 
+        }
         return null;
+    }
+    public static ArrayList<String> getButtons(Integer pageNumber, boolean hasPrevious, boolean hasNext) {
+
+        if ( hasNext && hasPrevious )
+            return new ArrayList<String>(
+                Arrays.asList(
+                        "⬅️ " + (pageNumber - 1) + " ⬅️",
+                        "➡️ " + (pageNumber + 1) + " ➡️",
+                        "✖️Назад"));
+        else if ( hasNext )
+            return new ArrayList<String>(
+                    Arrays.asList(
+                            "➡️ " + (pageNumber + 1) + " ➡️",
+                            "✖️Назад"));
+        else
+            return new ArrayList<String>(
+                    Arrays.asList(
+                            "⬅️ " + (pageNumber - 1) + " ⬅️",
+                            "✖️Назад"));
+
     }
 }
